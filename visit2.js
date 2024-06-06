@@ -11,8 +11,8 @@ function delay(time) {
 const getLinks = async () => {
     try {
         const response = await axios.get('https://jsonblob.com/api/jsonBlob/1243773632148004864');
-        // return response.data;
-        return ["https://www.highcpmgate.com/hfti37z08a?key=211ed34a603fc6ced7d0721c88cf2d3b"]
+        return response.data;
+        // return ["https://www.highcpmgate.com/hfti37z08a?key=211ed34a603fc6ced7d0721c88cf2d3b"]
     } catch (error) {
         console.log('Error fetching links:', error);
         return [];
